@@ -40,6 +40,6 @@ __pycache__
 *.out
 *.app
 
-python/build/
-python/*egg-info/
-python/dist/
+build/
+*egg-info/
+dist/

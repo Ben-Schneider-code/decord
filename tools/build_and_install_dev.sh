@@ -9,7 +9,7 @@ cmake .. -DUSE_CUDA=0 -DCMAKE_BUILD_TYPE=Debug -DFFMPEG_DIR=$FFMPEG
 cmake --build . --parallel 16
 
 # Install python bindings
-cd ../python
+cd ..
 # option 1: add python path to $PYTHONPATH, you will need to install numpy separately
 pwd=$PWD
 echo "PYTHONPATH=$PYTHONPATH:$pwd" >> ~/.bashrc
