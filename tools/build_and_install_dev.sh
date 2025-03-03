@@ -12,7 +12,7 @@ cmake --build . --parallel 16
 cd ..
 # option 1: add python path to $PYTHONPATH, you will need to install numpy separately
 pwd=$PWD
-echo "PYTHONPATH=$PYTHONPATH:$pwd" >> ~/.bashrc
-source ~/.bashrc
+export "PYTHONPATH=$PYTHONPATH:$pwd"
+
 # option 2: install with setuptools
 python setup.py install --user bdist_wheel
