@@ -15,4 +15,4 @@ pwd=$PWD
 echo "PYTHONPATH=$PYTHONPATH:$pwd" >> ~/.bashrc
 source ~/.bashrc
 # option 2: install with setuptools
-python setup.py install --user
+python setup.py install --user bdist_wheel
