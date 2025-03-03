@@ -10,9 +10,5 @@ cmake --build . --parallel 16
 
 # Install python bindings
 cd ..
-# option 1: add python path to $PYTHONPATH, you will need to install numpy separately
-pwd=$PWD
-export "PYTHONPATH=$PYTHONPATH:$pwd"
-
-# option 2: install with setuptools
+# install with setuptools
 python setup.py install --user bdist_wheel
