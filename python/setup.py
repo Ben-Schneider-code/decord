@@ -7,13 +7,9 @@ import glob
 from setuptools import find_packages
 from setuptools.dist import Distribution
 
-# need to use distutils.core for correct placement of cython dll
-if '--inplace' in sys.argv:
-    from distutils.core import setup
-    from distutils.extension import Extension
-else:
-    from setuptools import setup
-    from setuptools.extension import Extension
+# We do not currecntly support inplace builds, as the majority of the project is c++ anyways
+from setuptools import setup
+from setuptools.extension import Extension
 
 class BinaryDistribution(Distribution):
     def has_ext_modules(self):
